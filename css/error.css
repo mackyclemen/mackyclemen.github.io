@@ -1,0 +1,10 @@
+/* Import statements here*/
+@import '/css/base-landing.css';
+
+* {
+	color: black;
+}
+
+#footer * {
+	color: white;
+}
