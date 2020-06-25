@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <title>Hello Website!</title>
-    <script>
-        let mailme = () => {
-            // stopping bots from using my email lmao
-            user = "mackyclemen";
-            domain = "gmail.com";
-            window.open(`mailto:${user}@${domain}`);
-        }
-    </script>
 </head>
 <body>
     <div class="bottom-corner">
@@ -22,5 +14,17 @@
         <button class="button" onclick="mailme()">contact me</button>
         </div>
     </div>
+    <script>
+        function mailme() {
+            // stopping bots from using my email lmao
+            var user = "mackyclemen";
+            var domain = "gmail.com";
+            if (window.document.documentMode) {
+                window.open("mailto:" + user + "@" + domain + "?body=You **really** should change out of Internet Explorer.");
+            } else {
+                window.open("mailto:" + user + "@" + domain);
+            }
+        }
+    </script>
 </body>
 </html>
