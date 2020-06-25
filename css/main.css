@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    color: rgb(254, 254, 254);
+
+    font-family: "Consolas", monospace;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 24pt;
+    
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 1.15em;
+}
+
+p {
+    padding: 2pt 0;
+    font-size: 0.75em;
+}
+
+.button {
+    background-color: rgba(255, 153, 0, 0.5);
+    padding: 8pt;
+}
+
+.bottom-corner {
+    padding: 32pt;
+    font-size: 18pt;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom-corner * {
+    margin: 4pt 0;
+}
+
+.bg {
+    padding: 16pt 32pt;
+    background-color: rgba(128, 128, 128, 0.25);
+    backdrop-filter: blur(20px);
+    text-align: right;
+    display: block;
+}
